@@ -1,0 +1,15 @@
+
+<h1>text from parent {{prop}}</h1>
+
+<input [(ngModel)]="title"/>
+
+<button (click)="submitForm()">sbmit</button>
+
+
+<div *ngFor="let todo of todos">
+<p>{{todo.title}}</p>
+</div>
+<button (click)="caller()">caller</button>
+
+<input placeholder="enter name" [(ngModel)]="name"/>
+<button (click)="clicker()">ok</button>
